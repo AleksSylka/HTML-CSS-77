@@ -42,11 +42,16 @@ body {
     padding-right: 15px;
 }
 
+.top-line-box {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+
 .top-line {
     display: flex;
     align-items: baseline;
-    padding: 24px 15px;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .link-style {
@@ -55,6 +60,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-brand-color);
+    text-decoration: none;
 }
 
 .logo-up {
@@ -123,6 +129,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-brand-color);
+    text-decoration: none;
 }
 
 .contacts:hover,
@@ -168,15 +175,14 @@ body {
 
 .banner {
     background-color: var(--second-brand-color);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding-top: 192px;
     padding-bottom: 192px;
 }
 
 .banner-text {
     width: 492px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-style-banner {
@@ -192,7 +198,10 @@ body {
     cursor: pointer;
     width: 170px;
     height: 51px;
+    display: block;
     margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-style-banner:hover,
@@ -220,8 +229,6 @@ body {
 }
 
 .description-services {
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 120px;
 }
 
@@ -255,9 +262,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 285px;
-    padding-right: 285px;
 }
 
 .button-style-filter {
@@ -270,7 +274,11 @@ body {
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
-    padding: 8px 16px;
+    padding: 12px 24px;
+}
+
+.button-filter-list:nth-child(n+2) {
+    margin-left: 24px;
 }
 
 .button-style-filter:hover,
@@ -294,9 +302,13 @@ body {
     margin-top: 48px;
 }
 
+.list-portfolio {
+    border-bottom: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .item-text-portfolio {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
 }
 
 .light-backgrounds-section {
@@ -305,16 +317,13 @@ body {
 
 .footer-section {
     background-color: var(--second-brand-color);
-    padding: 100px 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
     width: 264px;
     margin-top: 16px;
-}
-
-.list-portfolio {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .link-portfolio {
